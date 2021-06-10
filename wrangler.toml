@@ -1,7 +1,7 @@
-name = "worker"
+name = "counter_obj"
 # type = "javascript" is required to use the `[build]` section
 type = "javascript"
-account_id = ""
+account_id = "95e065d2e3f97a1e50bae58aea71df6d"
 workers_dev = true
 route = ""
 zone_id = ""
