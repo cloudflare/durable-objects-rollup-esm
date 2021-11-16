@@ -13,5 +13,13 @@ export default {
     file: 'dist/index.mjs',
     sourcemap: true,
   },
-  plugins: [commonjs(), nodeResolve({ browser: true }), terser()],
+  plugins: [
+    commonjs(),
+    nodeResolve({
+      // priority increases from left to right
+      exportConditions: ['browser', 'worker'],
+      browser: true,
+    }),
+    terser(),
+  ],
 }
