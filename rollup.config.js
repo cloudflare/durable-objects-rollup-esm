@@ -13,5 +13,12 @@ export default {
     file: 'dist/index.mjs',
     sourcemap: true,
   },
-  plugins: [commonjs(), nodeResolve({ browser: true }), terser()],
+  plugins: [
+    commonjs(),
+    nodeResolve({
+      exportConditions: ['browser', 'worker'],
+      browser: true,
+    }),
+    terser(),
+  ],
 }
