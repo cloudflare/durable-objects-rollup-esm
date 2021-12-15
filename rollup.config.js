@@ -16,7 +16,6 @@ export default {
   plugins: [
     commonjs(),
     nodeResolve({
-      // priority increases from left to right
       exportConditions: ['browser', 'worker'],
       browser: true,
     }),
