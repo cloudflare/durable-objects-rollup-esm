@@ -29,3 +29,11 @@ Durable Object 'A' 2 is even
 bash-3.2$ curl worker.your-account-name.workers.dev/decrement?name=A
 Durable Object 'A' 1 is odd
 ```
+
+## Other Durable Objects templates:
+
+If you prefer TypeScript, or Webpack (in place of Rollup), or no bundler:
+
+- TypeScript + Rollup + ES Modules: https://github.com/cloudflare/durable-objects-typescript-rollup-esm
+- Webpack + CommonJS Modules: https://github.com/cloudflare/durable-objects-webpack-commonjs
+- Vanilla JS: https://github.com/cloudflare/durable-objects-template
